@@ -1,0 +1,107 @@
+/* General styling */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* App container */
+.container {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+  width: 350px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Input section */
+.input-section {
+  display: flex;
+  gap: 10px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
+
+#addBtn {
+  padding: 10px 15px;
+  border: none;
+  background: #74ebd5;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#addBtn:hover {
+  background: #4ecdc4;
+}
+
+/* Filter buttons */
+.filters {
+  margin: 15px 0;
+}
+
+.filter-btn {
+  padding: 6px 12px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #eee;
+}
+
+.filter-btn.active {
+  background: #74ebd5;
+  color: white;
+}
+
+/* Task list */
+#taskList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task {
+  background: #f9f9f9;
+  padding: 10px;
+  margin: 6px 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.task.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: red;
+  font-size: 16px;
+}
+
+#taskCounter {
+  margin-top: 10px;
+  color: #444;
+  font-size: 14px;
+}
